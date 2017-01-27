@@ -22,7 +22,7 @@ import javax.ws.rs.core.UriInfo;
  */
 @Stateless
 @Path("todos")
-@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+//@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public class ToDosResource {
 
     @Inject
@@ -34,8 +34,14 @@ public class ToDosResource {
     }
 
     @GET
+    /*
     public List<ToDo> all() {
         return this.manager.all();
+    }
+*/
+    
+    public String all() {
+        return "Hey!";
     }
 
     @POST
